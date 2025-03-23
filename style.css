@@ -1,0 +1,573 @@
+/* variabel */
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", serif;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+}
+
+/* resets & helper */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* navbar */
+.navbar {
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.navbar-brand span {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand span {
+        font-size: 1.5rem;
+    }
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    /* Tambahkan sedikit padding agar jarak nyaman */
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+}
+
+/* btn */
+.btn-small-text {
+    font-size: 13px;
+    /* Sesuaikan ukuran */
+    padding: 10px 16px;
+    /* Sesuaikan padding agar proporsional */
+}
+
+.btn-small-text-hero {
+    font-size: 15px;
+    /* Sesuaikan ukuran */
+    padding: 15px 25px;
+    /* Sesuaikan padding agar proporsional */
+}
+
+/* hero */
+.hero {
+    background: url('img/bg4.JPG') no-repeat center center;
+    background-size: cover;
+    /* Agar gambar menutupi seluruh section */
+    min-height: 100vh;
+    /* Hero tetap memenuhi layar */
+    padding-top: 120px;
+    /* Jarak agar tidak tertutup navbar */
+    padding-bottom: 30px;
+    /* Jarak bawah agar tidak menutupi bagian selanjutnya */
+    display: flex;
+    align-items: center;
+}
+
+.hero img {
+    max-width: 100%;
+    /* Gambar tetap responsif */
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* .hero .btn-danger {
+    background-color: #f04e50;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+} */
+
+.btn-success {
+    position: relative;
+    overflow: hidden;
+    background-color: #198754;
+    /* Warna hijau */
+    border: none;
+    color: white;
+    /* Warna teks */
+    transition: color 0.4s ease-in-out;
+}
+
+.btn-success::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Mulai dari luar */
+    width: 100%;
+    height: 100%;
+    background-color: #d63c3e;
+    /* Warna merah saat hover */
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+    /* Pastikan ini di belakang teks */
+}
+
+.btn-success:hover::before {
+    left: 0;
+    /* Geser ke kanan */
+}
+
+.btn-success span {
+    position: relative;
+    z-index: 1;
+    /* Pastikan teks tetap di atas hover */
+}
+
+.tersedia h1 {
+    margin-bottom: 50px;
+}
+
+.icon-pelayanan {
+    width: 80px;
+    /* Ukuran lingkaran */
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Warna lingkaran transparan */
+    border-radius: 50%;
+    /* Membuat elemen menjadi lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-pelayanan i {
+    font-size: 40px;
+    /* Ukuran ikon */
+    color: white;
+    /* Warna ikon */
+}
+
+.hover-effect {
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling untuk section About */
+.about {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .border-decoration {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 3px dashed rgba(25, 135, 84, 0.3);
+    top: -15px;
+    left: -15px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+/* Image hover effect */
+.about .image-wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.about .hover-zoom {
+    transition: transform 0.5s ease;
+}
+
+.about .hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Badge styling */
+.about .experience-badge {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    background-color: #198754;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about .exp-years {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.about .exp-text {
+    font-size: 0.75rem;
+}
+
+/* Title styling */
+.section-header .subtitle {
+    color: #198754;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.title-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #198754;
+    margin-top: 10px;
+}
+
+/* Feature boxes styling */
+.about .feature-box {
+    transition: all 0.3s ease;
+    border-left: 4px solid #198754;
+}
+
+.about .feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ikon styling */
+.about .ikon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #198754;
+    border-radius: 50%;
+    padding: 10px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.about .ikon i {
+    font-size: 24px;
+}
+
+.about .ikon:hover {
+    background-color: #198754;
+    transform: rotate(10deg);
+}
+
+.about .ikon:hover i {
+    color: white !important;
+}
+
+/* CTA Button styling */
+.about .btn-success {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(25, 135, 84, 0.2);
+}
+
+.about .btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(25, 135, 84, 0.3);
+}
+
+/* Section Profil Styling */
+.profil {
+    background-color: #f9f9f9;
+}
+
+.profile-card {
+    overflow: hidden;
+    border-top: 5px solid #198754;
+}
+
+.profile-image-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.profile-image-border {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 3px dashed rgba(25, 135, 84, 0.4);
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.profile-image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 5px solid #198754;
+    border-radius: 50%;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.profile-image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.experience-badge {
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    background-color: #198754;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid white;
+}
+
+.exp-years {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.exp-text {
+    font-size: 0.5rem;
+    line-height: 1;
+}
+
+.expertise-item {
+    transition: all 0.3s ease;
+}
+
+.expertise-item:hover {
+    background-color: #75ca7c !important;
+    transform: translateX(5px);
+}
+
+.guarantee-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.guarantee-box::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(25, 135, 84, 0.1);
+    border-radius: 50%;
+    top: -70px;
+    right: -70px;
+    z-index: 0;
+}
+
+@media (max-width: 767px) {
+    .profile-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-image-border {
+        width: 170px;
+        height: 170px;
+    }
+
+    .profile-image-container .experience-badge {
+        width: 80px;
+        height: 80px;
+        right: -30px;
+        top: 80px;
+    }
+
+    .exp-years {
+        font-size: 1.2rem;
+    }
+
+    .exp-text {
+        font-size: 0.5rem;
+    }
+}
+
+.promosi img {
+    max-width: 75%;
+    height: auto;
+}
+
+.promosi .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.promosi .kecil {
+    font-size: 15px;
+}
+
+.keunggulan {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Jarak antar item */
+}
+
+.keunggulan-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Jarak antara ikon dan teks */
+}
+
+.ikon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #198754;
+    border-radius: 50%;
+    padding: 10px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    /* Menambahkan transisi untuk semua properti */
+}
+
+.ikon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(25, 135, 84, 0.5);
+    cursor: pointer;
+}
+
+.ikon img {
+    width: 60px;
+    /* Pastikan ukuran ikon proporsional */
+    height: 60px;
+    object-fit: contain;
+    /* Mencegah gambar terpotong */
+}
+
+.keunggulan-text h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.keunggulan-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+    /* Warna abu-abu */
+}
+
+/* paket */
+.paket {
+    margin-top: 100px;
+}
+
+.price-btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+    border-width: 2px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.price-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+.price-amount {
+    letter-spacing: 0.5px;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Rasio aspek 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer a:hover {
+    color: #f8b400 !important;
+    /* Warna highlight saat hover */
+}

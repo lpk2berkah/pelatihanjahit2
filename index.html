@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LPK DUA BERKAH</title>
+    <link rel="icon" href="img/lpk2b.PNG" type="image/png">
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css custom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- <img src="img/cvdayabunda.PNG" alt="Logo" width="50" height="50" class="d-inline-block align-middle">
+                <img src="img/yayasan2b.PNG" alt="Logo" width="50" height="50" class="d-inline-block align-middle">-->
+                <img src="img/lpk2b.PNG" alt="Logo" width="35" height="35" class="d-inline-block align-middle">
+                <span class="ms-2 align-middle fw-bold">LPK DUA BERKAH</span>
+            </a>
+
+            <!-- Tombol Offcanvas (Hanya Muncul di Mobile) -->
+            <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Biasa untuk Desktop -->
+            <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                <ul class="navbar-nav text-center px-4">
+                    <li class="nav-item px-4"><a class="nav-link" href="#">Home</a></li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Program
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Paket
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Paket 1</a></li>
+                            <li><a class="dropdown-item" href="#">Paket 2</a></li>
+                            <li><a class="dropdown-item" href="#">Paket 3</a></li>
+                            <li><a class="dropdown-item" href="#">Paket 4</a></li>
+                            <li><a class="dropdown-item" href="#">Paket 5</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <a href="https://wa.me/6287876042557?text=hai,%20saya%20tertarik%20untuk%20mengikuti%20pelatihan%20menjahit%0A%0Asaya%20ingin%20tau%20informasi%20lebih%20lanjut"
+                    class="btn btn-success ms-auto px-4 btn-small-text" target="_blank">
+                    <span>Hubungi Kami</span><i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu untuk Mobile -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">LPK DUA BERKAH</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-start">
+            <ul class="navbar-nav">
+                <button class="btn mb-3 text-start w-100" type="button">
+                    Home
+                </button>
+                <!-- Dropdown dengan Bootstrap Collapse -->
+                <!-- <div class="mb-3">
+                    <button class="btn text-start w-100" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#programCollapse1">
+                        Program <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="collapse" id="programCollapse1">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">Action</a>
+                            </li>
+                            <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">Another
+                                    action</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">Something
+                                    else here</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <!-- <div class="mb-3">
+                    <button class="btn text-start w-100" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#programCollapse2">
+                        Paket <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="collapse" id="programCollapse2">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">Action</a>
+                            </li>
+                            <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">Another
+                                    action</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">Something
+                                    else here</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </ul>
+
+            <!-- Tombol Hubungi Kami -->
+            <a href="https://wa.me/6287876042557?text=hai,%20saya%20tertarik%20untuk%20mengikuti%20pelatihan%20menjahit%0A%0Asaya%20ingin%20tau%20informasi%20lebih%20lanjut"
+                class="btn btn-success ms-auto px-4 btn-small-text" target="_blank">
+                <span>Hubungi Kami</span> <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- hero -->
+    <section class="hero d-flex align-items-center">
+        <div class="container px-3"> <!-- Tambahkan padding horizontal -->
+            <div class="row align-items-center text-center text-lg-start">
+                <!-- Bagian Kiri: Teks -->
+                <div class="col-lg-6">
+                    <h1 class="fw-bold">
+                        Selamat Datang di LPK DUA BERKAH
+                        <br>Pelatihan <span class="text-success">Menjahit</span> &amp; Wirausaha
+                        <span class="text-success">Konveksi</span>
+                    </h1>
+                    <p class="lead">
+                        Bergabunglah dengan kursus menjahit kami dan jadilah profesional di bidang menjahit dan mode
+                        desain!
+                    </p>
+                    <a href="https://wa.me/6287876042557?text=hai,%20saya%20tertarik%20untuk%20mengikuti%20pelatihan%20menjahit%0A%0Asaya%20ingin%20tau%20informasi%20lebih%20lanjut"
+                        class="btn btn-success ms-auto px-4 mb-4 btn-small-text" target="_blank">
+                        <span>Hubungi Kami →</span>
+                    </a>
+                    <!-- Tambahkan mb-4 -->
+                </div>
+
+                <!-- Bagian Kanan: Gambar -->
+                <div class="col-lg-6 text-center" data-aos="fade-up">
+                    <img src="img/jahit.jpg" alt="Hero Image" class="img-fluid rounded-3 shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- tentang -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 position-relative">
+                    <!-- Efek Border Dekoratif -->
+                    <div class="border-decoration"></div>
+
+                    <!-- Gambar dengan hover effect -->
+                    <div class="image-wrapper overflow-hidden rounded-3" data-aos="fade-up">
+                        <img src="img/depantoko.jpg" alt="LPK DUA BERKAH" class="img-fluid rounded-3 shadow hover-zoom">
+                    </div>
+
+                    <!-- Badge overlay -->
+                    <div class="experience-badge" data-aos="fade-up">
+                        <span class="exp-text">Sejak</span>
+                        <span class="exp-years">2003</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-content ps-lg-4">
+                        <!-- Section title dengan styling baru -->
+                        <div class="section-header mb-4" data-aos="fade-up">
+                            <span class="subtitle d-block mb-2">TENTANG KAMI</span>
+                            <h2 class="fw-bold mb-3">LPK DUA BERKAH</h2>
+                            <div class="title-underline"></div>
+                            <p class="text-primary fw-medium mt-2">Lembaga Pelatihan Kursus Menjahit</p>
+                        </div>
+
+                        <!-- Content dengan icon -->
+                        <div class="about-text">
+                            <p class="text-secondary mb-4" data-aos="fade-up">
+                                LPK DUA BERKAH adalah lembaga pelatihan kursus menjahit yang berlokasi di Dusun Lendang
+                                Bedurik, Kelurahan
+                                Sekarteja, Kabupaten Lombok Timur. Kami menyediakan kursus menjahit bagi pemula hingga
+                                mahir, serta kursus wirausaha konveksi.
+                            </p>
+
+                            <p class="text-secondary mb-4" data-aos="fade-up">
+                                Dengan bergabung di LPK DUA BERKAH, Anda akan mendapatkan pengalaman belajar yang
+                                menyenangkan dan
+                                mendidik. Instruktur kami adalah para ahli di bidangnya, sehingga Anda akan mendapatkan
+                                pembelajaran
+                                yang berkualitas.
+                            </p>
+                        </div>
+
+                        <!-- Feature boxes -->
+                        <div class="row g-3 mt-3" data-aos="fade-up">
+                            <div class="col-md-6">
+                                <div class="feature-box p-3 bg-light rounded-3 shadow-sm text-center">
+                                    <div class="ikon mx-auto mb-3">
+                                        <img src="img/instructor.png" alt="">
+                                    </div>
+                                    <h5 class="fw-bold">Instruktur Ahli</h5>
+                                    <p class="small mb-0">Pelatihan profesional</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box p-3 bg-light rounded-3 shadow-sm text-center">
+                                    <div class="ikon mx-auto mb-3">
+                                        <img src="img/certificate.png" alt="">
+                                    </div>
+                                    <h5 class="fw-bold">Bersertifikat</h5>
+                                    <p class="small mb-0">Sertifikat diakui industri</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div class="mt-4" data-aos="fade-up">
+                            <a href="https://wa.me/6287876042557?text=hai,%20saya%20tertarik%20untuk%20mengikuti%20pelatihan%20menjahit%0A%0Asaya%20ingin%20tau%20informasi%20lebih%20lanjut"
+                                class="btn btn-success btn-lg px-4 py-2 rounded-pill" target="_blank"><span>Hubungi
+                                    Kami</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- profil -->
+    <section class="profil py-5" id="profil">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="profile-card bg-white shadow-sm rounded-4 p-4 p-md-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-4 mb-md-0">
+                                <div class="profile-image-container mx-auto position-relative">
+                                    <div class="profile-image-border"></div>
+                                    <div class="profile-image-wrapper">
+                                        <img src="img/harlin2.JPG" alt="Harlin - Pemilik LPK Dua Berkah"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="experience-badge">
+                                        <span class="exp-years">21</span>
+                                        <span class="exp-text">Tahun Pengalaman</span>
+                                    </div>
+                                </div>
+                                <h3 class="fw-bold mt-4 mb-1" data-aos="fade-up">HARLIN</h3>
+                                <p class="text-success fw-medium" data-aos="fade-up">Direktur Utama Dua Berkah</p>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="profile-content">
+                                    <div class="section-header mb-4">
+                                        <h4 class="fw-bold border-start border-success border-4 ps-3"
+                                            data-aos="fade-up">Profil Profesional
+                                        </h4>
+                                    </div>
+
+                                    <div class="profile-text">
+                                        <div data-aos="fade-up">
+                                            <p class="lead mb-3">
+                                                Kini telah hadir di kota anda - Modes jahit 2 berkah dan Rumah terampil
+                                                2
+                                                berkah.
+                                            </p>
+
+                                            <p class="mb-3">
+                                                Sebagai pemilik dan praktisi konveksi 2 berkah, pengalaman saya
+                                                mengkolaborasi dunia usaha nyata atau lebih ke praktek dengan pengalaman
+                                                kerja selama <span class="fw-bold text-success">21 tahun sejak
+                                                    2003</span>.
+                                            </p>
+
+                                            <p class="mb-3">
+                                                Saya merupakan praktisi yang menggabungkan dan mengkonversi kalkulasi
+                                                dan
+                                                spekulasi di bidang:
+                                            </p>
+                                        </div>
+
+                                        <div class="expertise-areas mb-4" data-aos="fade-up">
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div
+                                                        class="expertise-item d-flex align-items-center p-2 bg-success-subtle rounded-3">
+                                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                                        <span>Konveksi produk lalu di pasarkan</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div
+                                                        class="expertise-item d-flex align-items-center p-2 bg-success-subtle rounded-3">
+                                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                                        <span>Konveksi pesan order</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div
+                                                        class="expertise-item d-flex align-items-center p-2 bg-success-subtle rounded-3">
+                                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                                        <span>Semi taillor</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div
+                                                        class="expertise-item d-flex align-items-center p-2 bg-success-subtle rounded-3">
+                                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                                        <span>Taillor</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div
+                                                        class="expertise-item d-flex align-items-center p-2 bg-success-subtle rounded-3">
+                                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                                        <span>Busana butik/ tata busana</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div
+                                                        class="expertise-item d-flex align-items-center p-2 bg-success-subtle rounded-3">
+                                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                                        <span>Mekanisme garmen</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="mb-3" data-aos="fade-up">
+                                            Semua bidang tersebut bisa di konversi kalkulasi, spekulasi dan teknik
+                                            bersaing ke kompetitor di sekitar kita sehingga bukan ke pesanan
+                                            individu/personal namun bisa melobi jemput bola pesannan kelompok/partai
+                                            besar.
+                                        </p>
+
+                                        <p class="mb-4" data-aos="fade-up">
+                                            Dibimbing menganalisis target pasar penjualan sehingga tidak bingung dalam
+                                            memasarkan produk. Pengalaman saya selama 21 tahun sejak 2003 insyaallah
+                                            prinsip Modes jahit 2 berkah berorientasi ke mandiri dan siap kerja.
+                                        </p>
+
+                                        <div class="guarantee-box p-3 bg-success bg-opacity-10 rounded-3 border border-success mb-4"
+                                            data-aos="fade-up">
+                                            <h5 class="fw-bold text-success mb-2">Jaminan Kualitas:</h5>
+                                            <p class="mb-0">
+                                                <i class="bi bi-award text-warning"></i>
+                                                Modes jahit 2 BERKAH terpercaya bergaransi - hayooo buktikan
+                                                sendiri!
+                                                <br>
+                                                <i class="bi bi-cash-stack text-success"></i>
+                                                <span class="fw-bold">Jaminan uang kembali melalui rekrut kerja</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="text-center text-md-end mt-4" data-aos="fade-up">
+                                            <a href="https://wa.me/6287876042557?text=hai,%20saya%20tertarik%20untuk%20mengikuti%20pelatihan%20menjahit%0A%0Asaya%20ingin%20tau%20informasi%20lebih%20lanjut"
+                                                class="btn btn-success btn-lg px-4" target="_blank"><span>Daftar
+                                                    Sekarang</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- tersedia -->
+    <section class="tersedia" id="tersedia">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#198754" fill-opacity="1"
+                d="M0,96L48,112C96,128,192,160,288,181.3C384,203,480,213,576,197.3C672,181,768,139,864,133.3C960,128,1056,160,1152,186.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <div class="container-fluid bg-success">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h1 class="d-flex text-light justify-content-center" data-aos="fade-up">Tersedia</h1>
+                    <div class="container">
+                        <div class="row justify-content-center" data-aos="fade-up">
+                            <!-- Baris 1 - 3 Kolom -->
+                            <div class="col-4 col-md-2 mb-4 hover-effect">
+                                <div class="d-flex justify-content-center">
+                                    <div class="icon-pelayanan d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-book"></i>
+                                    </div>
+                                </div>
+                                <div class="text-light text-center my-3">
+                                    <h6>Paket 1</h6>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 mb-4 hover-effect">
+                                <div class="d-flex justify-content-center">
+                                    <div class="icon-pelayanan d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-book"></i>
+                                    </div>
+                                </div>
+                                <div class="text-light text-center my-3">
+                                    <h6>Paket 2</h6>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 mb-4 hover-effect">
+                                <div class="d-flex justify-content-center">
+                                    <div class="icon-pelayanan d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-book"></i>
+                                    </div>
+                                </div>
+                                <div class="text-light text-center my-3">
+                                    <h6>Paket 3</h6>
+                                </div>
+                            </div>
+
+                            <!-- Baris 2 - 2 Kolom -->
+                            <div class="col-6 col-md-2 mb-4 hover-effect">
+                                <div class="d-flex justify-content-center">
+                                    <div class="icon-pelayanan d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-book"></i>
+                                    </div>
+                                </div>
+                                <div class="text-light text-center my-3">
+                                    <h6>Paket 4</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-2 mb-4 hover-effect">
+                                <div class="d-flex justify-content-center">
+                                    <div class="icon-pelayanan d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-book"></i>
+                                    </div>
+                                </div>
+                                <div class="text-light text-center my-3">
+                                    <h6>Paket 5</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#198754" fill-opacity="1"
+                d="M0,96L48,112C96,128,192,160,288,181.3C384,203,480,213,576,197.3C672,181,768,139,864,133.3C960,128,1056,160,1152,186.7C1248,213,1344,235,1392,245.3L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- promosi -->
+    <section class="promosi" id="promosi">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <span class="subtitle d-block mb-2" data-aos="fade-up">Kenapa harus memilih LPK DUA BERKAH?
+                        </span>
+                        <h2 class="fw-bold mb-3" data-aos="fade-up">LPK DUA BERKAH</h2>
+                        <div class="title-underline" data-aos="fade-up"></div>
+                        <p class="text-primary fw-medium mt-2" data-aos="fade-up">Lembaga Pelatihan Kursus Menjahit</p>
+                    </div>
+                    <p class="kecil text-secondary" data-aos="fade-up">
+                        LPK DUA BERKAH adalah pilihan terbaik bagi Anda yang ingin belajar menjahit secara profesional.
+                        Kami menawarkan:
+                    </p>
+                    <div class="keunggulan">
+                        <div class="keunggulan-item" data-aos="fade-up">
+                            <div class="ikon">
+                                <img src="img/materi/paper.png" alt="Icon 1">
+                            </div>
+                            <div class="keunggulan-text">
+                                <h5>Materi Desain Fashion</h5>
+                                <p>Kurikulum lengkap dari dasar hingga mahir</p>
+                            </div>
+                        </div>
+                        <div class="keunggulan-item" data-aos="fade-up">
+                            <div class="ikon">
+                                <img src="img/materi/team.png" alt="Icon 2">
+                            </div>
+                            <div class="keunggulan-text">
+                                <h5>Peluang Bisnis</h5>
+                                <p>Selain itu, kami juga menyediakan kursus wirausaha konveksi untuk membekali Anda
+                                    dengan keterampilan bisnis di bidang jahit-menjahit</p>
+                            </div>
+                        </div>
+                        <div class="keunggulan-item" data-aos="fade-up">
+                            <div class="ikon">
+                                <img src="img/materi/teacher.png" alt="Icon 3">
+                            </div>
+                            <div class="keunggulan-text">
+                                <h5>Instruktur Ahli</h5>
+                                <p>Didukung oleh instruktur berpengalaman dan metode pembelajaran yang efektif</p>
+                            </div>
+                        </div>
+                        <div class="keunggulan-item" data-aos="fade-up">
+                            <div class="ikon">
+                                <img src="img/materi/dormitory.png" alt="Icon 3">
+                            </div>
+                            <div class="keunggulan-text">
+                                <h5>Fasilitas</h5>
+                                <p>Dengan suasana belajar yang nyaman dan fasilitas memadai, LPK DUA BERKAH siap
+                                    membantu Anda meraih keterampilan dan peluang usaha yang menjanjikan!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-up">
+                    <img src="img/undraw_winners_fre4.png" alt="promosi Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- paket -->
+    <section class="paket bg-success-subtle" id="paket">
+        <div class="container py-5">
+            <div class="section-header text-center mb-4">
+                <span class="subtitle d-block mb-2" data-aos="fade-up">PAKET PELATIHAN MENJAHIT</span>
+                <h2 class="fw-bold mb-3" data-aos="fade-up">LPK DUA BERKAH</h2>
+                <div class="title-underline mx-auto" data-aos="fade-up"></div>
+                <p class="text-primary fw-medium mt-2" data-aos="fade-up">Lembaga Pelatihan Kursus Menjahit</p>
+            </div>
+
+            <!-- card -->
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/pkt.1.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">PAKET 1</h5>
+                                    <p class="card-text">Peserta didik akan memperoleh keterampilan dasar hingga
+                                        menengah dalam pembuatan berbagai jenis pakaian dan produk fashion, khususnya
+                                        untuk perempuan dan anak-anak
+                                    </p>
+                                    <a href="https://wa.me/6287876042557?text=Hai,%20saya%20ingin%20mendaftar%20untuk%20mengikuti%20pelatihan%20**Paket%201**.%0A%0ASaya%20ingin%20mengetahui%20informasi%20lebih%20lanjut%20mengenai%20jadwal,%20fasilitas,%20dan%20biaya%20pelatihannya.%0A%0ATerima%20kasih."
+                                        class="btn btn-outline-success price-btn" target="_blank">
+                                        <span class="price-amount">Rp. 2.000.000</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/pkt.2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">PAKET 2</h5>
+                                    <p class="card-text">Peserta didik akan memperoleh keterampilan menjahit yang lebih
+                                        luas dan komprehensif, mencakup berbagai jenis pakaian untuk perempuan,
+                                        laki-laki, dan anak-anak</p>
+                                    <a href="https://wa.me/6287876042557?text=Hai,%20saya%20ingin%20mendaftar%20untuk%20mengikuti%20pelatihan%20**Paket%202**.%0A%0ASaya%20ingin%20mengetahui%20informasi%20lebih%20lanjut%20mengenai%20jadwal,%20fasilitas,%20dan%20biaya%20pelatihannya.%0A%0ATerima%20kasih."
+                                        class="btn btn-outline-success price-btn" target="_blank">
+                                        <span class="price-amount">Rp. 3.500.000</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/pkt.3.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">PAKET 3</h5>
+                                    <p class="card-text">Peserta didik akan memperoleh keahlian yang komprehensif dalam
+                                        menjahit dan bisnis fashion, mencakup berbagai aspek teknis, kreatif, dan
+                                        manajerial</p>
+                                    <a href="https://wa.me/6287876042557?text=Hai,%20saya%20ingin%20mendaftar%20untuk%20mengikuti%20pelatihan%20**Paket%203**.%0A%0ASaya%20ingin%20mengetahui%20informasi%20lebih%20lanjut%20mengenai%20jadwal,%20fasilitas,%20dan%20biaya%20pelatihannya.%0A%0ATerima%20kasih."
+                                        class="btn btn-outline-success price-btn" target="_blank">
+                                        <span class="price-amount">Rp. 6.000.000</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/pkt.4.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">PAKET 4</h5>
+                                    <p class="card-text">PELATIHAN MENJAHIT KOMPREHENSIF + BONUS EKSKLUSIF<br>
+                                        Pelatihan ini tidak hanya membekali peserta dengan keterampilan menjahit beragam
+                                        jenis pakaian, tetapi juga memberikan ilmu bisnis, teknik produksi, serta
+                                        alat-alat pendukung untuk memulai usaha sendiri!</p>
+                                    <a href="https://wa.me/6287876042557?text=Hai,%20saya%20ingin%20mendaftar%20untuk%20mengikuti%20pelatihan%20**Paket%204**.%0A%0ASaya%20ingin%20mengetahui%20informasi%20lebih%20lanjut%20mengenai%20jadwal,%20fasilitas,%20dan%20biaya%20pelatihannya.%0A%0ATerima%20kasih."
+                                        class="btn btn-outline-success price-btn" target="_blank">
+                                        <span class="price-amount">Rp. 14.000.000</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/pkt.5.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">PAKET 5</h5>
+                                    <p class="card-text">
+                                        PELATIHAN MENJAHIT & WIRAUSAHA PROFESIONAL<br>
+                                        "Belajar Menjahit, Mengelola Bisnis, dan Menjadi Pengusaha Sukses!"<br>
+                                        Pelatihan ini dirancang tidak hanya untuk mengajarkan keterampilan menjahit,
+                                        tetapi juga membentuk peserta menjadi wirausahawan sukses di industri fashion.
+                                        Anda akan dibekali dengan ilmu desain, produksi, manajemen bisnis, dan strategi
+                                        pemasaran untuk membangun usaha sendiri.
+                                    </p>
+                                    <a href="https://wa.me/6287876042557?text=Hai,%20saya%20ingin%20mendaftar%20untuk%20mengikuti%20pelatihan%20**Paket%205**.%0A%0ASaya%20ingin%20mengetahui%20informasi%20lebih%20lanjut%20mengenai%20jadwal,%20fasilitas,%20dan%20biaya%20pelatihannya.%0A%0ATerima%20kasih."
+                                        class="btn btn-outline-success price-btn" target="_blank">
+                                        <span class="price-amount">Rp. 16.000.000</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- daftar -->
+    <section class="daftar py-5" id="daftar">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="fw-bold mb-3" data-aos="fade-up">Daftar Sekarang Juga</h2>
+                    <div class="map-container" data-aos="fade-up">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1172.7110999013898!2d116.53631039354642!3d-8.642542729692254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4febe092a3c5%3A0xb235f5e72c5bfebf!2sDUA%20BERKAH%20KONVEKSI!5e0!3m2!1sen!2sid!4v1742126965228!5m2!1sen!2sid"
+                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="mt-2 pt-2" data-aos="fade-up">
+                        <a href="https://wa.me/6287876042557?text=hai,%20saya%20tertarik%20untuk%20mengikuti%20pelatihan%20menjahit%0A%0Asaya%20ingin%20tau%20informasi%20lebih%20lanjut"
+                            class="btn btn-success ms-auto px-4 btn-small-text" target="_blank">
+                            <span>Hubungi Kami →</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom 1: Logo dan Deskripsi -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">LPK 2 BERKAH</h5>
+                    <p>Pelatihan Menjahit & Wirausaha Konveksi Bergabunglah dengan kursus menjahit kami dan jadilah
+                        profesional di bidang menjahit dan mode desain!</p>
+                </div>
+
+                <!-- Kolom 2: Navigasi Cepat -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <!-- <li><a href="#produk" class="text-light text-decoration-none">Produk</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Keranjang</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Kontak -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Kontak</h5>
+                    <p><i class="bi bi-geo-alt-fill"></i> Dusun Lendang Bedurik Kelurahan Sekarteja</p>
+                    <p><i class="bi bi-envelope-fill"></i> harlinlpkb@gmail.com</p>
+                    <p><i class="bi bi-telephone-fill"></i> 087717398311</p>
+                </div>
+            </div>
+
+            <!-- Media Sosial -->
+            <div class="text-center py-3">
+                <a href="#" class="text-light mx-2"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-light mx-2"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-light mx-2"><i class="bi bi-twitter-x fs-4"></i></a>
+                <a href="#" class="text-light mx-2"><i class="bi bi-youtube fs-4"></i></a>
+            </div>
+
+            <!-- Hak Cipta -->
+            <div class="text-center py-2 border-top">
+                <p class="mb-0">&copy; 2025 LPK 2 BERKAH All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- file javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
